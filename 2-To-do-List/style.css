@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.todo-list{
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    height: auto;
+}
+
+.todo-header{
+    display: flex;
+    /* border: 1px solid green; */
+    color: rgba(5, 5, 109, 0.816);
+    margin: 0px 0px 15px 0px;
+}
+.todo-header .fa-book{
+    margin: 8px  ;
+}
+
+.todo-content{
+    /* border: 1px solid blue; */
+    position: relative;
+}
+.todo-content input{
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: lightgray;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 50px;
+}
+.todo-content button{
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(231, 74, 17);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    right: 0px;
+    width: 80px;
+    height: 50px;
+}
+.todo-content button:active{
+    background-color: rgb(202, 70, 22);
+}
+
+ul.tasks{
+    /* border: 1px solid red; */
+    margin: 35px 0px 0px 30px;
+    
+}
+ul.tasks li{
+    list-style-type: none;
+    margin: 8px 0px;
+    font-size: 17px;
+    position: relative;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    /* border-radius: 50%; */
+    background: url('images/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    left: -45px;
+}
+li.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+ul li.checked::before{
+    content: '';
+    background: url('images/checked.png');
+    height: 28px;
+    width: 28px;
+    background-size: cover;
+    background-position: center;
+}
+span{
+    position: absolute;
+    font-size: 22px;
+    right: 5px;
+    /* top: 5px; */
+    color: #555;
+    /* width: 40px;
+    height: 20px; */
+    /* text-align: center; */
+}
+span:hover{
+    background-color: #edeef0;
+    border-radius: 50%;
+}
