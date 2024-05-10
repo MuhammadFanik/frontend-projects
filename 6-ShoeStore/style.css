@@ -70,7 +70,6 @@ body{
     justify-content: space-between;
     color: white;
     margin-top: 20px;
-    /* margin-bottom: 40px; */
 }
 .navbar .bottom h3{
     cursor: pointer;
@@ -444,6 +443,11 @@ body{
     color: #808080;
     cursor: pointer;
 }
+.footer-left{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
 
 .sub-1 h3{
     font-weight: 600;
@@ -471,4 +475,100 @@ body{
 .sub-2 .fa-brands{
     margin: 5px 2px;
     cursor: pointer;
+}
+
+
+
+/* media queries -- responsiveness */
+@media screen and (max-width:640px) {
+    .upper #search{
+        display: none;
+    }
+    .navbar .bottom{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar .bottom h3{
+        font-size: 10px;
+    }
+
+    .slider{
+        width: 100%;
+    }
+    .slider img{
+        width: 80%;
+        object-fit: contain;
+    }
+    .sliderItem .sliderbg{
+        width: 100%;
+        height: 100%;
+    }
+    .sliderItem .sliderTitle{
+        display: none;
+    }
+    .sliderItem .sliderPrice{
+        top: 75%;
+        font-size: 40px;
+        padding: 5px;
+        left: 12%;
+    }
+    .sliderItem .sliderBuy{
+        top: 85%;
+        padding: 5px;
+        font-size: 20px;
+    }
+    .features{
+        flex-direction: column;
+        padding: 0;
+        /* margin: 0; */
+    }
+    .feature-item{
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    .abc{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .product-left{
+        height: 150px;
+    }
+    .product-left img{
+        width: 100vw;
+    }
+    .product-right button{
+        bottom: 0;
+        right: 0;
+    }
+    .gallery{
+        display: none;
+    }
+    
+    .arrivals{
+        flex-direction: column;
+    }
+    .arrivals img{
+        width: 100vw;
+        object-fit: contain;
+    }
+    .arr-mid button{
+        margin-bottom: 25px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-left{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .modal{
+        width: 95%;
+        left: 0;
+        bottom: 0;
+    }
 }

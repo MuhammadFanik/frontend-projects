@@ -138,8 +138,3 @@ button.addEventListener("click", function(){
 close.addEventListener("click", function(){
   modal.style.display = "none";
 })
-
-
-// dealing with the arrivals section button
-const arrivalButton = document.querySelector(".arr-btn");
-console.log(arrivalButton);
