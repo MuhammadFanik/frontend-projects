@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* main image css */
+#navbar{
+    width: 100%;
+    height: 95%;
+    background-color: red;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.menu{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-logo img{
+    height: 50px;
+}
+.menu-btn button{
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    width: 80px;
+    font-weight: 700;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.menu-btn button:hover{
+    background-color: #c11119;
+}
+.main-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1000px;
+}
+.main-content h1{
+    font-size: 48px;
+}
+.main-content h3{
+    font-size: 30px;
+}
+.main-content p{
+    font-weight: 400;
+    font-size: 20px;
+}
+.main-content .started input{
+    padding: 15px;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.378);
+    border: 1px solid white;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+}
+.started{
+    display: flex;
+    width: 650px;
+    margin: auto;
+    justify-content: space-between;
+}
+.main-content .started input::placeholder{
+    color: rgba(255, 255, 255, 0.548);
+}
+.main-content .started button{
+    padding: 10px;
+    border: none;
+    background-color: #e50914;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.main-content .started button:hover{
+    background-color: #c11119;
+}
+
+
+/* features section css */
+#features{
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+.f1{
+    margin-top: 150px;
+    display: flex;
+}
+.f1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.f1-content h2{
+    font-size: 45px;
+}
+.f1-content h4{
+    text-align: center;
+    font-size: 25px;
+}
+.division{
+    background-color: gray;
+    width: 100%;
+    height: 10px;
+    margin-top: 50px;
+}
+.f2{
+    margin-top: 150px;
+    display: flex;
+}
+.f2-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.f2-content h2{
+    font-size: 45px;
+}
+.f2-content h4{
+    text-align: center;
+    font-size: 25px;
+}
+.f3{
+    margin-top: 150px;
+    display: flex;
+}
+.f3-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.f3-content h2{
+    font-size: 45px;
+}
+.f3-content h4{
+    text-align: center;
+    font-size: 25px;
+}
+.f4{
+    margin-top: 150px;
+    display: flex;
+}
+.f4-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.f4-content h2{
+    font-size: 45px;
+    text-align: center;
+}
+.f4-content h4{
+    font-size: 25px;
+}
+
+
+
+/* FAQ section css 
+#faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin:50px auto;
+    height: auto;
+
+}
+.faq-item{
+    width: 1050px;
+
+}
+.visible{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.visible:hover{
+    background-color: #414141;
+}
+.faq-question{
+    font-size: 25px;
+    margin-top: 15px;
+}
+.faq-icon{
+    font-size: 45px;
+}
+.faq-answer{
+    margin-top: 2px;
+    background-color: #2d2d2d;
+    font-size: 25px;
+    padding: 10px;
+    display: none;
+}
+*/
+
+
+
+/* footer section css */
+.footer{
+    /* border: 1px solid green; */
+    width: 80%;
+    height: 350px;
+    margin: 50px auto 50px;
+    color: rgba(255,255,255,0.7);
+}
+.footer > h4{
+    font-weight: 500;
+}
+.footer > h4 a{
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.footer-links ul li{
+    list-style-type: none;
+    cursor: pointer;
+    margin: 10px 0px;
+    text-decoration: underline;
+}
+
+select {
+    margin-top: 20px;
+    padding: 8px;
+    background-color: #2d2d2d;
+    color: white;
+}
+.footer > p{
+    margin-top: 19px;
+    margin-bottom: 50px;
+}
+
+
+@media all and (max-width:1024px){
+    #navbar{
+        width: 1024px;
+        height: 85%;
+    }
+    .menu{
+        width: 95%;
+    }
+    .menu-logo img{
+        height: 40px;
+    }
+    .menu-btn button{
+        width: 120px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .f1{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        width: 800px;
+        height: auto;
+    }
+    .f1-content{
+        gap: 10px;
+        align-items: center;
+    }
+    .f1-content h2{
+        text-align: center;
+        font-size: 30px;
+        /* border: 1px solid green; */
+    }
+    .f1-content h4{
+        font-size: 15px;
+    }
+    .f1 img{
+        height: 500px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+
+
+
+    .f2{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        width: 800px;
+        height: auto;
+    }
+    .f2-content{
+        gap: 10px;
+        align-items: center;
+    }
+    .f2-content h2{
+        text-align: center;
+        font-size: 30px;
+        /* border: 1px solid green; */
+    }
+    .f2-content h4{
+        font-size: 15px;
+    }
+    .f2 img{
+        height: 500px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+
+    .f3{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        width: 800px;
+        height: auto;
+    }
+    .f3-content{
+        gap: 10px;
+        align-items: center;
+    }
+    .f3-content h2{
+        text-align: center;
+        font-size: 30px;
+        /* border: 1px solid green; */
+    }
+    .f3-content h4{
+        font-size: 15px;
+    }
+    .f3 img{
+        height: 500px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+
+    .f4{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        width: 800px;
+        height: auto;
+    }
+    .f4-content{
+        gap: 10px;
+        align-items: center;
+    }
+    .f4-content h2{
+        text-align: center;
+        font-size: 30px;
+        /* border: 1px solid green; */
+    }
+    .f4-content h4{
+        font-size: 15px;
+    }
+    .f4 img{
+        height: 500px;
+        height: 300px;
+        object-fit: contain;
+    }
+}
+
+
+
+@media all and (max-width:768px){
+    #navbar{
+        max-width: 885px;
+    }
+    .main-content{
+        width: 95%;
+        left: 55%;
+        gap: 10px;
+    }
+    .main-content h1{
+        font-size: 36px;
+    }
+    .main-content h3{
+        font-size: 25px;
+    }
+    .started{
+        margin-top: 5px;
+        justify-content: space-around;
+        width: 450px;
+    }
+    .main-content .started input{
+        width: 300px;
+    }
+    .main-content .started button{
+        font-size: 16px;
+    }
+
+    .f1{
+        /* border: 1px solid red; */
+        width: 700px;
+        margin-left: 25px;
+    }
+    .division{
+        width: 768px;
+        
+    }
+    .f2{
+        /* border: 1px solid red; */
+        width: 700px;
+        margin-left: 25px;
+    }
+    .f3{
+        /* border: 1px solid red; */
+        width: 700px;
+        margin-left: 25px;
+    }
+    .f4{
+        /* border: 1px solid red; */
+        width: 700px;
+        margin-left: 25px;
+    }
+    .footer{
+        width: 95%;
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+
+
+
+    @media all and (max-width:426px){
+        #navbar{
+            width: 825px;
+            height: 105vh;
+            background-size: contain;
+        }
+        .menu{
+            margin: 0;
+            padding: 5px;
+            width: 100%;
+        }
+        .menu-logo img{
+            height: 70px;
+        }
+        .menu-btn button{
+            margin-right: 20px;
+            font-size: 25px;
+            width: 130px;
+        }
+        .main-content{
+            position: absolute;
+            left: 95%;
+            top: 300px;
+            width: 700px;
+            gap: 30px;
+        }
+        .division{
+            width: 760px;
+        }
+        .footer{
+            width: 730px;
+        }
+    }
+}
